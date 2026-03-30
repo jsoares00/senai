@@ -1,0 +1,10 @@
+programa {
+  funcao inicio() {
+    real salario = 5000
+    inteiro diasTrabalhados = 22
+    real salario_Por_Dia
+    salario_Por_Dia = salario / diasTrabalhados
+
+    escreva("junin receba por dia: R$" + salario_Por_Dia)
+  }
+}
