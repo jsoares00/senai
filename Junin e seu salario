@@ -1,10 +1,14 @@
 programa {
   funcao inicio() {
-    real salario = 5000
-    inteiro diasTrabalhados = 22
-    real salario_Por_Dia
-    salario_Por_Dia = salario / diasTrabalhados
+    real dia, mensal
+    escreva("qual o custo mensal?")
+leia(mensal)
+    escreva("\nvalor recebido de dizimos e ofertas no dia? ")
+    leia(dia)5
 
-    escreva("junin receba por dia: R$" + salario_Por_Dia)
+    escreva("\n falta R$ " )
+    escreva(mensal - dia)
+escreva("  para pagar completamente os custos mensais")
+  
   }
 }
