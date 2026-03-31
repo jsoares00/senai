@@ -1,0 +1,16 @@
+programa {
+  funcao inicio() {
+    real gasto = 8000
+    inteiro ingresso = 7500
+    real vendas = 5000
+inteiro lucro
+lucro = ingresso + vendas - gasto
+escreva("lucro :" + lucro)
+escreva("\n")
+escreva("porcentagen de lucro :")
+
+
+
+    
+  }
+}
