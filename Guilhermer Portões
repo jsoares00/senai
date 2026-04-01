@@ -1,0 +1,12 @@
+programa {
+  funcao inicio() {
+    inteiro clt, pj 
+    escreva("quantos desenvolvedores estao de carteira assinada ? ")
+    leia(clt)
+    escreva("\nquantos desenvolvedores atuão de pessoa juridica na empresa ? ")
+    leia(pj)
+
+escreva("no total atuão ", clt + pj)
+escreva(" dessenvolvedores na empresa")
+}
+}
