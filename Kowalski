@@ -1,6 +1,6 @@
 programa {
   funcao inicio() {
-    // criar as variaveis
+
     inteiro qtdRelatoriosPF, qtdRelatoriosPJ
     inteiro tempoRelatoriosPF, tempoRelatoriosPJ
     real valorTotalPF, valorTotalPJ
@@ -10,7 +10,6 @@ programa {
     real mediaValorPF, mediaValorPJ
     real mediaTempoPF, mediaTempoPJ
 
-    // leitura dos dados
     escreva("Quantidade de relatórios PF: ")
     leia(qtdRelatoriosPF)
     escreva("Quantidade de relatórios PJ: ")
@@ -24,7 +23,6 @@ programa {
     escreva("Valor total dos relatórios PJ: R$")
     leia(valorTotalPJ)
 
-    // processar/calcular
     qtdTotal = qtdRelatoriosPF + qtdRelatoriosPJ
     tempoTotal = tempoRelatoriosPF + tempoRelatoriosPJ
     valorTotal = valorTotalPF + valorTotalPJ
@@ -33,7 +31,6 @@ programa {
     mediaTempoPF = tempoRelatoriosPF / qtdRelatoriosPF
     mediaTempoPJ = tempoRelatoriosPJ / qtdRelatoriosPJ
 
-    // apresentar os dados 
     escreva("Quantidade total (PF+PJ): " + qtdTotal)
     escreva("\nTempo total (PF+PJ, em horas): " + tempoTotal)
     escreva("\nValor total (PF+PJ): R$" + valorTotal)
