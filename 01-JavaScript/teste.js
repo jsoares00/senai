@@ -5,15 +5,12 @@ alert("Olá mundo!")
 
  nome = "Rafael"
 
-lert("Nome: " + nome)
-
+alert("Nome: " + nome)
  let idade = 30
  alert("Idade: " + idade)
-
  alert("Nome: " + nome + "\nIdade: " + idade)
-
  nome = prompt("Digite seu nome:")
- alert("Nome digitado: " + nome)
+//  alert("Nome digitado: " + nome)
 
 
 let nota1
