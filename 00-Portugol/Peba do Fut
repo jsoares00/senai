@@ -1,0 +1,11 @@
+programa {
+  funcao inicio() {
+    inteiro vitoria, empate, pontos
+    escreva("quantas vitorias teve a equipe ? ")
+    leia(vitoria)
+    escreva("quantos empate a equipe teve ? ")
+    leia(empate)
+    escreva("total de pontos da equipe :")
+escreva(vitoria * 3 + empate)
+  }
+}

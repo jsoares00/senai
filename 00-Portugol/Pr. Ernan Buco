@@ -1,0 +1,14 @@
+programa {
+  funcao inicio() {
+    inteiro mensal =5000
+    real dia
+    escreva("custo mensal = 5000")
+    escreva("\nvalor recebido de dizimos e ofertas no dia? ")
+    leia(dia)
+
+    escreva("\n falta " )
+    escreva(mensal - dia)
+escreva("  para pagar completamente os custos mensais")
+  
+  }
+}

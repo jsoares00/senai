@@ -1,0 +1,12 @@
+programa {
+  funcao inicio() {
+    inteiro laranjaInicio, laranjaFinal
+    escreva("quantas laranjas possuem no inicio do dia ?  ")
+    leia(laranjaInicio)
+    escreva("quantas laranja possuem no final do dia ?")
+leia(laranjaFinal)
+escreva("\n")
+escreva("\nforam vendidas no dia um total de ")
+escreva(laranjaInicio - laranjaFinal)
+  }
+}

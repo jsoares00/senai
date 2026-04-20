@@ -1,0 +1,11 @@
+programa {
+  funcao inicio() {
+    real celsius, fahrenheit
+   escreva("informe a temperatura em celsius ºc :")
+   leia(celsius)
+   fahrenheit = (celsius) *(9/5) + (32)
+   se(fahrenheit > 68)(escreva("ATEMÇÃO \n--temperatura esta alta, BEBA AGUA!!!--"))
+   escreva("\na temperatura em fahrenheit é de : ", fahrenheit)
+   se(fahrenheit < 68)(escreva("\n--temperatura esta um pouco frio se sair nao esquesa um casaco--"))
+  }
+}

@@ -1,0 +1,23 @@
+programa {
+  funcao inicio() {
+   real faturamento,premiacoes, presentes, comissoes, lucro, meta
+    escreva("qual foi seu faturamento ? :R$")
+    leia(faturamento)
+    escreva("qual valor gosto em premiação ? :R$")
+    leia(premiacoes)
+    escreva("qual valor gasto em presentes ? : R$")
+    leia(presentes)
+    escreva("qual o valor gasto em comissões ? :R$")
+    leia(comissoes)
+    lucro = faturamento - presentes -presentes - comissoes
+
+    escreva("qual a meta de lucro deseja ser atingida ? : R$")
+    leia(meta)
+    escreva("-LUCRO TOTAL É DE : R$", lucro)
+    se(meta < lucro)(escreva("\nmeta batida"))
+    senao(escreva("\nFALTA : R$" ,lucro - meta))
+
+
+  }
+}
+//Dona Bete faturou hoje um bruto de R$6579,00  Ela pagou R$112,00 em premiações, gastou R$750,00 em “presentes”  e R$650,00 reais em comissões re

@@ -1,0 +1,10 @@
+programa {
+  funcao inicio() {
+    inteiro idade, idadehumano
+    escreva("qual a idade do seu cachorro ? ")
+    leia(idade)
+    idadehumano = (idade * 7)
+    se (idadehumano > 65)(
+    escreva("seu cachorro ta muito velho ele tem :",idadehumano))
+  }
+}

@@ -1,0 +1,21 @@
+//alert("ola, Mundo")
+
+let nome Promise((resolve, reject) => {
+    
+    nome = "nomezinho aki"
+
+ alert(nome)
+ //alert= escreva
+ //let = vareavel 
+ //prompt = leia
+ //number("vareavel")= transformar vareavel em numero
+let idade = 19
+ alert("idade", idade ) 
+ nome = prompt("escreva nome")
+ alert("nome digitado",nome)
+ let nota1
+ nota1 = prompt("qual sua primeira nota")
+ nota1 = Number(nota1)
+nota1 = nota1 + 1
+ alert(nota1)
+}) 

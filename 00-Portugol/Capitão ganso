@@ -1,0 +1,20 @@
+programa {
+  funcao inicio() {
+    real gasto, lucroPersentual
+    inteiro ingresso 
+    real vendas, lucro
+escreva("quais foram o valorea doa gastos ?")
+leia(gasto)
+escreva("\nquanto foi faturado em ingresso?")
+leia(ingresso)
+escreva("\nqual foi o faturamento em itens ? ")
+leia(vendas)
+lucro = ingresso + vendas - gasto
+escreva("\no valor do lucro é de :R$", lucro)
+lucroPersentual = (lucro/ gasto) * 100
+escreva("\nporsentagemn de lucro :",lucroPersentual)
+
+
+    
+  }
+}

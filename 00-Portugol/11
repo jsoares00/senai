@@ -1,0 +1,12 @@
+programa {
+  funcao inicio() {
+    real saldopix, precoItem, troco
+   escreva("qual valor do item que voce quer comprar ? ")
+   leia(precoItem)
+    escreva("quanto voce tem no pix ? ")
+leia(saldopix)
+se(saldopix > precoItem)(escreva("parabens voce pode comprar ")
+)
+
+  }
+}

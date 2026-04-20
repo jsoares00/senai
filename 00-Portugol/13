@@ -1,0 +1,9 @@
+programa {
+  funcao inicio() {
+    cadeia idade
+    escreva(" qual sua idade ?")
+    leia(idade)
+    se(idade > 16)(escreva("pode votar"))
+    se(idade < 16)(escreva("nao pode votar"))
+  }
+}
