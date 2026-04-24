@@ -22,15 +22,20 @@ custoPorToken =Number(prompt("qual valor do custo por token ?"))
 
 
 
+
+
+
+
+
+
+
+
     // inteiro tamanhoDoPrompt
     // inteiro totalTokens
-    // real custoPorToken = 0.151, totalReais
-
+    // real custoPorToken = 0.151, totalReai
     // escreva("Tamanho do prompt: ")
     // leia(tamanhoDoPrompt)
-  
     // totalTokens = tamanhoDoPrompt + 5
     // totalReais = totalTokens * custoPorToken
-  
     // escreva("Total de tokens: " + totalTokens)
     // escreva("\nValor: R$" + totalReais)

@@ -26,6 +26,11 @@ alert("o lucro total com a vendas dos jacaressao de : R$"+ lucroTotal)
 
 
 
+
+
+
+
+
     // inteiro caminhoes
     // real lucroPorCaminhao, lucroTotal
     // lucroPorCaminhao = (90*50) - 450
