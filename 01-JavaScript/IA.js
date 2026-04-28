@@ -5,9 +5,15 @@ let tamanhoDoPrompt, totalTokens, custoPorToken, totalReais
 tamanhoDoPrompt = Number(prompt("digite o tamanho de promt usado :"))
 totalTokens = Number(tamanhoDoPrompt + 5)
 custoPorToken =Number(prompt("qual valor do custo por token ?"))
-totalReais = totalTokens + custoPorToken 
+totalReais = totalTokens * custoPorToken 
 
-alert("total valor a pagar pelos prompt é de : R$" + totalReais)
+alert("total valor a pagar pelos prompt é de : R$" + totalReais.toFixed(2))
+console.log("total valor a pagar pelos prompt é de : R$" + totalReais.toFixed(2))
+
+
+
+
+
 
 
 
