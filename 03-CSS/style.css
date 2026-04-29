@@ -1,20 +1,100 @@
-body{
-    background-color: rgb(6, 73, 150);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-output {
-    /* background-color: rgb(255, 0, 0); */
-    background-color: #99FFFF;
-    color: #000000;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: larger;
+body {
+    background-color: hwb(0 35% 10%) 0.10834)3673)4 0.00595).09351 / 0.047).09351 / 0.047) 43%, 25%, 0.047) 43%, 25%, 0.047) 43%, 25%, 0.047)
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: white;
 }
 
-button{
+/* Criando um container para o conteúdo */
+.container {
+    background-color: rgba(255, 255, 255, 0.1); /* Branco com transparência */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 800px;
+    backdrop-filter: blur(5px); /* Efeito de vidro embaçado */
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+h2 {
+    font-weight: 300;
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 20px 0;
+}
+
+/* Estilizando os botões */
+button {
     background-color: #0000ff;
     color: #99FFFF;
-    padding: 5px;
-    border-radius: 5px;
+    padding: 12px 20px;
+    border-radius: 8px;
     border: none;
-    margin: 10px;
+    margin: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease; /* Transição suave */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Efeito ao passar o mouse */
+button:hover {
+    background-color: #99FFFF;
+    color: #0000ff;
+    transform: translateY(-3px); /* Botão sobe um pouquinho */
+}
+
+/* Estilizando a saída (output) */
+#resultado {
+    display: block;
+    margin-top: 25px;
+    padding: 15px;
+    background: #000000;
+    color: #d83f24; /* Estilo terminal para combinar com o Courier */
+    font-family: 'Courier New', monospace;
+    border-radius: 5px;
+    min-height: 50px;
+}
+body {
+    /* 1. O caminho da imagem (pode ser um link da internet ou arquivo local) */
+    background-image: url(https://i.pinimg.com/1200x/78/58/d7/7858d71705ed4aa1bfef7ab49132a312.jpg);
+    
+    /* 2. Faz a imagem cobrir a tela inteira sem sobrar espaço branco */
+    background-size: cover;
+    
+    /* 3. Centraliza a imagem */
+    background-position: center;
+    
+    /* 4. Impede que a imagem se repita como um papel de parede antigo */
+    background-repeat: no-repeat;
+    
+    /* 5. Faz a imagem ficar parada enquanto você rola a página */
+    background-attachment: fixed;
+
+    /* Mantemos o flex para centralizar seu conteúdo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
 }
