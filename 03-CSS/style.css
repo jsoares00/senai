@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: hwb(0 35% 10%) 0.10834)3673)4 0.00595).09351 / 0.047).09351 / 0.047) 43%, 25%, 0.047) 43%, 25%, 0.047) 43%, 25%, 0.047)
+    background-color: hwb(0 35% 10%);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     justify-content: center;
@@ -14,7 +14,7 @@ body {
     color: white;
 }
 
-/* Criando um container para o conteúdo */
+ /* Criando um container para o conteúdo */ 
 .container {
     background-color: rgba(255, 255, 255, 0.1); /* Branco com transparência */
     padding: 30px;
@@ -45,7 +45,7 @@ hr {
 
 /* Estilizando os botões */
 button {
-    background-color: #0000ff;
+    background-color: #e00909a9;
     color: #99FFFF;
     padding: 12px 20px;
     border-radius: 8px;
@@ -59,8 +59,8 @@ button {
 
 /* Efeito ao passar o mouse */
 button:hover {
-    background-color: #99FFFF;
-    color: #0000ff;
+    background-color: #a6b9b9;
+    color: #fc0000e0;
     transform: translateY(-3px); /* Botão sobe um pouquinho */
 }
 
@@ -76,22 +76,22 @@ button:hover {
     min-height: 50px;
 }
 body {
-    /* 1. O caminho da imagem (pode ser um link da internet ou arquivo local) */
+    /*O caminho da imagem (pode ser um link da internet ou arquivo local) */
     background-image: url(https://i.pinimg.com/1200x/78/58/d7/7858d71705ed4aa1bfef7ab49132a312.jpg);
     
-    /* 2. Faz a imagem cobrir a tela inteira sem sobrar espaço branco */
+    /*Faz a imagem cobrir a tela inteira sem sobrar espaço branco */
     background-size: cover;
     
-    /* 3. Centraliza a imagem */
+    /*Centraliza a imagem */
     background-position: center;
     
-    /* 4. Impede que a imagem se repita como um papel de parede antigo */
+    /*Impede que a imagem se repita como um papel de parede antigo */
     background-repeat: no-repeat;
     
-    /* 5. Faz a imagem ficar parada enquanto você rola a página */
+    /*Faz a imagem ficar parada enquanto você rola a página */
     background-attachment: fixed;
 
-    /* Mantemos o flex para centralizar seu conteúdo */
+    /*flex para centralizar seu conteúdo */
     display: flex;
     justify-content: center;
     align-items: center;
