@@ -1,8 +1,59 @@
+function acessarCentrodeComando(){
+    let crachaValido , digitalReconhecida
+crachaValido = prompt("O crachá é válido? (sim ou não)")
+digitalReconhecida = prompt("A digital é reconhecida? (sim ou não)")
+if (crachaValido == "sim" && digitalReconhecida == "sim") {
+    document.getElementById('resultado').innerHTML = "Acesso liberado ao Centro de Comando"
+} else if (crachaValido == "sim" && digitalReconhecida == "nao"){
+    document.getElementById('resultado').innerHTML = "Falha na digital. Tente novamente ou chame o suporte"
+} else if (crachaValido == "nao" && digitalReconhecida == "sim"){
+    document.getElementById('resultado').innerHTML = "Crachá inválido. Dirija-se à recepção"
+} else {
+    document.getElementById('resultado').innerHTML = "Acesso negado. Verifique sua identificação"
+}
+}
+function SistemaTransporte(){
+let emManutenção, emergenciaAtiva
+emManutenção = prompt("O sistema de transporte está em manutenção? (sim ou não)")
+emergenciaAtiva = prompt("Há uma emergência ativa? (sim ou não)")
+if (emManutenção == "nao" && emergenciaAtiva === "nao") {
+    document.getElementById('resultado').innerHTML = "Transporte liberado para uso"
+}else {
+    document.getElementById('resultado').innerHTML = "Transporte indisponível por motivo de segurança."
+}
+}
+function entradaPalco(){
+    let somfuncinando,  figurinocompleto
+somfuncinando=prompt("o som esta funcionando ?(sim ou nao)")
+figurinocompleto=prompt("voce esta com a figurino completo ?(sim ou nao)")
+
+    if(somfuncinando =="sim" && figurinocompleto =="sim"){
+        document.getElementById('resultado').innerHTML = "Palco liberado para Sarumano! Luzes, câmera, ilusão!"
+    }else if(somfuncinando =="sim" && figurinocompleto =="nao"){
+        document.getElementById('resultado').innerHTML = "Faltando parte do figurino. Te vira no improviso!"
+    }else if(somfuncinando =="nao" && figurinocompleto =="sim"){
+        document.getElementById('resultado').innerHTML = "Sem som. Realizar apresentação alternativa no salão."
+    }else{
+    document.getElementById('resultado').innerHTML = "Apresentação cancelada. Hora da mágica de desaparecer…"
+}
+} 
+function deslocarEvento(){
+    let estaGripado, tempoVIagem
+
+estaGripado=prompt("voce esta gripado ?(sim ou nao)")
+tempoVIagem=Number(prompt("quanto tempo de viagem ?(responder em minutos)"))      
+    if(estaGripado =="sim" && tempoVIagem < 45){
+        document.getElementById('resultado').innerHTML = "Deslocamento inviável. Melhor recusar este evento."
+    }else{
+        document.getElementById('resultado').innerHTML = "Viagem autorizada. Rumo ao show!"
+        
+    }
+}
 function condiçaoFumaçaMistica(){
     let criancasPequenas, velocidadeVento
 
 criancasPequenas=prompt("tem crianças proximas ao palco ?(sim ou NAO)")
-velocidadeVento=prompt("qual a velocidade do vento ?")
+velocidadeVento=prompt("qual a velocidade do vento ?(responder em km/h)")
 
     if(criancasPequenas =="nao" && velocidadeVento>=0.5){
 
@@ -42,7 +93,6 @@ function verificarProvisoes(){
     }
     
 }
-
 function relatoriosKowalski(){
     let relatoriosPF, relatoriosPJ, tempoPF, tempoPJ, valorPF, valorPJ, valorTotal
     let qtdtotal, tempoTotal, mediaValorPF, mediaValorPJ, mediaTempoPF, mediaTempoPJ
@@ -69,7 +119,6 @@ console.log("\nMédia de valor por rel. PJ: R$" + mediaValorPJ)
 console.log("\nMédia tempo por rel. PF (horas): " + mediaTempoPF)
 console.log("\nMédia tempo por rel. PJ (horas): " + mediaTempoPJ)
 }
-
 function lucroDosJares(){    
     
 let lucroPorCaminhao, lucroTotal, caminhões
@@ -86,7 +135,6 @@ alert("o lucro total com a vendas dos jacares sao de : R$"+ lucroTotal.toFixed(2
 console.log("o lucro total com a vendas dos jacares sao de : R$"+ lucroTotal.toFixed(2))
 document.getElementById('resultado').innerHTML = "o lucro total com a vendas dos jacares sao de : R$"+ lucroTotal.toFixed(2)
 }
-
 function lucroDosFree(){
 let pagarDev, horas, salario, receberhrs
 
@@ -103,7 +151,6 @@ console.log("o valor a receber do free é de : R$"+ salario.toFixed(2))
 
 document.getElementById('resultado').innerHTML = "o valor a receber do free é de : R$"+ salario.toFixed(2)
 }
-
 function valorprompt(){
 
 let tamanhoDoPrompt, totalTokens, custoPorToken, totalReais
@@ -118,7 +165,6 @@ console.log("total valor a pagar pelos prompt é de : R$" + totalReais.toFixed(2
 
 document.getElementById('resultado').innerHTML = "total valor a pagar pelos prompt é de : R$" + totalReais.toFixed(2)
 }
-
 function calcularPrecoBrique(){
     // INFOS
     let precoCompra, precoVenda
@@ -131,5 +177,4 @@ function calcularPrecoBrique(){
     alert("Preço para venda: R$" + precoVenda.toFixed(2));
 
     document.getElementById('resultado').innerHTML = "Preço para venda: R$" + precoVenda.toFixed(2)
-
 }
