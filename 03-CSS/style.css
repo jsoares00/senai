@@ -45,7 +45,7 @@ hr {
 
 /* Estilizando os botões */
 button {
-    background-color: #e00909a9;
+    background-color: rgb(224, 9, 9, 0.663);
     color: #99FFFF;
     padding: 12px 20px;
     border-radius: 8px;

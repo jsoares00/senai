@@ -1,3 +1,38 @@
+function calcularParImpar(){
+    let n = Number(prompt("Digita número, meu consagrado:"))
+    if(n%2 == 0){
+        alert("Par")
+    }else{
+        alert("Ímpar")
+    }
+}
+function mostrarDiaDaSemana(){
+ 
+    let numero, dia
+  
+    numero = Number(prompt("Digita o número: "))
+ 
+    if(numero == 1){
+        dia = "Domingo"
+    }else if(numero == 2){
+        dia = "Segunda"
+    }else if(numero == 3){
+        dia = "Terça"
+    }else if(numero == 4){
+        dia = "Quarta"
+    }else if(numero == 5){
+        dia = "Quinta"
+    }else if(numero == 6){
+        dia = "Sexta"
+    }else if(numero == 7){
+        dia = "Sábado"
+    }else{
+        dia = "Erro #404, dia não encontrado."
+    }
+
+    document.getElementById('resultado').innerHTML = 'Dia escolhido: ' + dia
+
+}
 function acessarCentrodeComando(){
     let crachaValido , digitalReconhecida
 crachaValido = prompt("O crachá é válido? (sim ou não)")
@@ -82,7 +117,7 @@ function verificarProvisoes(){
     let comidaPorMarujo
  
     marujos = Number(prompt("Quantidade de marujos:"))
-    comida = Number(prompt("Quilos de comida:"))
+    comida = Number(prompt("Quilos de comida(kg):"))
   
     comidaPorMarujo = comida / marujos
     
