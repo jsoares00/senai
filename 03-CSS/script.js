@@ -1,3 +1,38 @@
+function linhacredito(){
+    let salario, emprestimo, prestaçao, valorParcela, maxParcela
+
+salario=Number(prompt("digite o valor de valor do seu salario"))
+emprestimo=Number(prompt("digite o valor que deseja receber de emprestimo"))
+prestaçao=Number(prompt("digite o numero de parcelar que deseja o crédito"))
+valorParcela= emprestimo/prestaçao
+maxParcela= salario*0.30
+if(valorParcela <= maxParcela){
+    document.getElementById('resultado').innerHTML="emprestimo concedido."
+}else{
+    document.getElementById('resultado').innerHTML = "emprestimo negado, valor da parcela maior que 30%"
+}
+}
+function calcularFaturamento(){
+    let faturamento, premiacoes, presentes, comissoes, lucro,meta
+
+faturamento=Number(prompt("qual o foi o faturamento ? "))
+premiacoes=Number(prompt("qual valor gasto em premiaçoes ? "))
+presentes=Number(prompt("qual o valor gasto em presentes ? "))
+comissoes=Number(prompt("qual o valor gasto em comissões ? "))
+meta=Number(prompt("digite o valor da meta de lucro para alcançar"))
+
+lucro = faturamento - presentes - premiacoes - comissoes
+    let mensagem
+if(lucro >=meta){
+    mensagem= "meta batida"
+}else{
+    mensagem= "meta nao atigida"
+}
+
+alert("O valor de lucro da Dona BETe é de : R$ "+ lucro.toFixed(2))
+console.log("O valor de lucro da Dona BETe é de : R$ "+ lucro.toFixed(2))
+document.getElementById('resultado').innerHTML = "valor do lucro é de : R$ "+lucro.toFixed(2).replace(".",",")+"   "+mensagem
+}
 function calcularParImpar(){
     let n = Number(prompt("Digita número, meu consagrado:"))
     if(n%2 == 0){
