@@ -4,14 +4,26 @@ Distancia=Number(prompt("digite a distancia da próxima corrida"))
 
 tempoS=Number
 tempoS= Distancia/valocidadeS
+document.getElementById('resultado').innerHTML = "Tempo estimado para chegar ao destino: " + tempoS + " segundos"
 
-let tempoMinuto,tempoHoras, tempoDias, tempoAnos
-tempoMinuto=tempoS*60
-console.log(tempoS)
+let tempoMinuto,tempoHoras, tempoDias, tempoMeses
+
 if(tempoS >60){
-    console.log(tempoMinuto)
+    tempoMinuto = tempoS / 60
+    document.getElementById('resultado').innerHTML = "Tempo estimado para chegar ao destino: " + tempoMinuto + " Minutos"
+}if(tempoMinuto > 60){
+    tempoHoras = tempoMinuto / 60
+    document.getElementById('resultado').innerHTML = "Tempo estimado para chegar ao destino: " + tempoHoras + " Horas"
+} if(tempoHoras > 48){
+    tempoDias = tempoHoras / 24
+    document.getElementById('resultado').innerHTML = "Tempo estimado para chegar ao destino: " + tempoDias + " Dias"
+}if (tempoDias > 30){
+    tempoMeses = tempoDias / 30
+    document.getElementById('resultado').innerHTML = "Tempo estimado para chegar ao destino: " + tempoMeses + " Meses"
+}if (tempoMeses > 12){
+    let tempoAnos = tempoMeses / 12
+    document.getElementById('resultado').innerHTML = "Tempo estimado para chegar ao destino: " + tempoAnos + " Anos"
 }
-
 }
 function linhacredito(){
     var salario, emprestimo, prestaçao, valorParcela, maxParcela
@@ -77,7 +89,7 @@ function mostrarDiaDaSemana(){
     }else if(numero == 7){
         dia = "Sábado"
     }else{
-        dia = "Erro #404, dia não encontrado."
+        dia = "Erro , dia não encontrado."
     }
 
     document.getElementById('resultado').innerHTML = 'Dia escolhido: ' + dia
