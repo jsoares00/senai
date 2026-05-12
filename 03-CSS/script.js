@@ -1,5 +1,20 @@
+function starUber(){
+    let Distancia, valocidadeS=300000, tempoS
+Distancia=Number(prompt("digite a distancia da próxima corrida"))
+
+tempoS=Number
+tempoS= Distancia/valocidadeS
+
+let tempoMinuto,tempoHoras, tempoDias, tempoAnos
+tempoMinuto=tempoS*60
+console.log(tempoS)
+if(tempoS >60){
+    console.log(tempoMinuto)
+}
+
+}
 function linhacredito(){
-    let salario, emprestimo, prestaçao, valorParcela, maxParcela
+    var salario, emprestimo, prestaçao, valorParcela, maxParcela
 
 salario=Number(prompt("digite o valor de valor do seu salario"))
 emprestimo=Number(prompt("digite o valor que deseja receber de emprestimo"))
