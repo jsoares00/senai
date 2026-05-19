@@ -33,7 +33,7 @@ emprestimo=Number(prompt("digite o valor que deseja receber de emprestimo"))
 prestaçao=Number(prompt("digite o numero de parcelar que deseja o crédito"))
 valorParcela= emprestimo/prestaçao
 maxParcela= salario*0.30
-if(valorParcela <= maxParcela){
+if(valorParcela >= maxParcela){
     document.getElementById('resultado').innerHTML="emprestimo concedido."
 }else{
     document.getElementById('resultado').innerHTML = "emprestimo negado, valor da parcela maior que 30%"

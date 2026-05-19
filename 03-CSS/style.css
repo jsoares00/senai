@@ -76,7 +76,7 @@ button:hover {
     min-height: 70px;
 }
 body {
-    /*O caminho da imagem (pode ser um link da internet ou arquivo local) */
+    /*O caminho da imagem () */
     background-image: url(https://i.pinimg.com/1200x/78/58/d7/7858d71705ed4aa1bfef7ab49132a312.jpg);
     
     /*Faz a imagem cobrir a tela inteira sem sobrar espaço branco */
@@ -97,16 +97,4 @@ body {
     align-items: center;
     min-height: 100vh;
     font-family: 'Segoe UI', sans-serif;
-}
-:single-button {
-    background-color: #ecdcdc;
-    color: #99FFFF;
-    padding: 12px 20px;
-    border-radius: 8px;
-    border: none;
-    margin: 8px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: all 0.3s ease; /* Transição suave */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
