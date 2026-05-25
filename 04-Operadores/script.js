@@ -2,11 +2,9 @@ let valorDADO=0, totalDADO=0,D4=0, D6=0,D10=0,D12=0
 function resetar(){
     valorDADO= valorDADO*0
     totalDADO= totalDADO*0
-    rolagemD4 = 0 
 document.getElementById('TotalDADO').innerHTML='Total valor dos Dados :'+totalDADO
-document.getElementById('valorDado').innerHTML='Ultimo Dado :'+valorDADO
-
-document.getElementById('listaDADOS').innerHTML += ""
+document.getElementById('valorDado').innerHTML='Ultimo Dado :  '
+document.getElementById('listaDADOS').innerHTML='0'
 }
 
 function rolagemD12(){
@@ -16,18 +14,18 @@ function rolagemD12(){
     D12= D12+1
 document.getElementById('TotalDADO').innerHTML='Total valor dos Dados :'+totalDADO
 document.getElementById('valorDado').innerHTML='Ultimo Dado :'+valorDADO
-document.getElementById('d12').innerHTML='numero de vezes DADO 4('+D12 +")"
-document.getElementById('listaDADOS').innerHTML += + valorDADO + '<br>'
+document.getElementById('D12').innerHTML='DADO 12('+D12 +")"
+document.getElementById('listaDADOS').innerHTML += + valorDADO + ', '
 }
 
 function rolagemD10(){
-valorDADO =Math.floor(Math.random() * (10 - 1 + 1)) + 1;
+    valorDADO =Math.floor(Math.random() * (10 - 1 + 1)) + 1;
     totalDADO = totalDADO + valorDADO 
     D10= D10+1
 document.getElementById('TotalDADO').innerHTML='Total valor dos Dados :'+totalDADO
 document.getElementById('valorDado').innerHTML='Ultimo Dado :'+valorDADO
-document.getElementById('d10').innerHTML='numero de vezes DADO 4('+D10 +")"
-document.getElementById('listaDADOS').innerHTML += + valorDADO + '<br>'
+document.getElementById('D10').innerHTML='DADO 10('+D10 +")"
+document.getElementById('listaDADOS').innerHTML += + valorDADO + ', '
 }
 function rolagemD6(){
 
@@ -36,8 +34,8 @@ function rolagemD6(){
     D6= D6+1
 document.getElementById('TotalDADO').innerHTML='Total valor dos Dados :'+totalDADO
 document.getElementById('valorDado').innerHTML='Ultimo Dado :'+valorDADO
-document.getElementById('d6').innerHTML='numero de vezes DADO 4('+D6 +")"
-document.getElementById('listaDADOS').innerHTML += + valorDADO + '<br>'
+document.getElementById('D6').innerHTML='DADO 6('+D6 +")"
+document.getElementById('listaDADOS').innerHTML += + valorDADO + ', '
 }
 
 function rolagemD4(){
@@ -47,8 +45,8 @@ D4= D4+1
 
 document.getElementById('TotalDADO').innerHTML='Total valor dos Dados :'+totalDADO
 document.getElementById('valorDado').innerHTML='Ultimo Dado :'+valorDADO
-document.getElementById('d4').innerHTML='numero de vezes DADO 4('+D4 +")"
-document.getElementById('listaDADOS').innerHTML += + valorDADO + '<br>'
+document.getElementById('D4').innerHTML='DADO 4('+D4 +")"
+document.getElementById('listaDADOS').innerHTML += + valorDADO + ', '
 }
 
 
