@@ -4,7 +4,12 @@ function resetar(){
     totalDADO= totalDADO*0
 document.getElementById('TotalDADO').innerHTML='Total valor dos Dados :'+totalDADO
 document.getElementById('valorDado').innerHTML='Ultimo Dado :  '
-document.getElementById('listaDADOS').innerHTML='0'
+document.getElementById('listaDADOS').innerHTML='  '
+document.getElementById('D4').innerHTML='DADO 4'
+document.getElementById('D6').innerHTML='DADO 6'
+document.getElementById('D10').innerHTML='DADO 10'
+document.getElementById('D12').innerHTML='DADO 12'
+
 }
 
 function rolagemD12(){

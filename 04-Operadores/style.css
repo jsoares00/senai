@@ -1,0 +1,9 @@
+button{
+    background-color: rgb(240, 55, 55);
+    border-bottom-left-radius: 30%;
+    
+}
+body{
+    background-color: rgb(79, 193, 221);
+    position: fixed;
+}
