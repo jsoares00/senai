@@ -8,25 +8,57 @@
 </head>
 <body>
     <h1>variaveis</h1>
+    
 <hr>
-<h2>copos de dados🎲</h2><button onclick="resetar()">reset</button>
-<div id='TotalDADO'>Total valor dos Dados</div>
-<p id='valorDado'>Ultimo Dado :</p>
-<button id="D4" onclick="rolagemD4()">DADO 4</button>
-<button id="D6" onclick="rolagemD6()">DADO 6</button>
-<button id="D10" onclick="rolagemD10()">DADO 10</button>
-<button id="D12" onclick="rolagemD12()">DADO 12</button>
 
-<div id="listaDADOS">lista dados anteriores : <br></div>
+<h3>Jogo Do Dino</h3>
+valor da aposta
+<input id="ValorAposta" type="text"><br>
+<br>
+<button onclick="Sortear(tRex)">T-Rex</button>
+<button onclick="Sortear(Espinossauro)">Espinossauro</button>
+<button onclick="Sortear(Branquiossauro)" >Branquiossauro</button>
+<button onclick="Sortear(Velociraptor)">Velociraptor</button>
+<button onclick="Sortear(Estegossauro)">Estegossauro</button><br>
+<button onclick="Sortear(Triceratopo)">Triceratopo</button>
+<button onclick="Sortear(Anquilossauro)">Anquilossauro</button>
+<button onclick="Sortear(Parassaurolofo)">Parassaurolofo</button>
+<button onclick="Sortear(Alossauro)">Alossauro</button>
+<button onclick="Sortear(Carnotauro)">Carnotauro</button>
+
+<h3>!! RESULTADO !!</h3>
+Seu Dino :
+<div id="DinoUSER"></div>
+Dino Sorteado :
+<div id="DinoCASA"></div>
+<br>
+<h4>
+    Historico:(grenn🟩 ou red🟥)
+</h4>
+    
+
+<hr>
+
+    <h2>copos de dados🎲</h2><button onclick="resetar()">reset</button>
+    <div id='TotalDADO'>Total valor dos Dados</div>
+    <p id='valorDado'>Ultimo Dado :</p>
+    <button id="D4" onclick="rolagemD4()">DADO 4 ( )</button>
+    <button id="D6" onclick="rolagemD6()">DADO 6 ( )</button>
+    <button id="D10" onclick="rolagemD10()">DADO 10 ( )</button>
+    <button id="D12" onclick="rolagemD12()">DADO 12 ( )</button>
+
+    <div id="listaDADOS">lista dados anteriores : <br></div>
+
+    
 
 
     <hr>
-    <h2>Vendas na Harry Ploter🛒</h2>
-    <p id="totalVendido">Total de vendas: R$0,00</p>
-    Valor da venda R$
-    <input id="inputVenda" type="text">
-    <button onclick="registrarVenda()">Cadastrar</button>
-    <div id="listaVendas"></div>
+     <h2>Vendas na Harry Ploter🛒</h2>
+      <p id="totalVendido">Total de vendas: R$0,00</p>
+        Valor da venda R$
+       <input id="inputVenda" type="text">
+      <button onclick="registrarVenda()">Cadastrar</button>
+     <div id="listaVendas"></div>
     <hr>''
 
     emmet vs code

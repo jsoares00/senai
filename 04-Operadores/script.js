@@ -1,3 +1,15 @@
+let TotalArecadado=0
+let ValorAposta=0
+
+
+function Sortear(tRex){
+    let grenn
+    ValorAposta = Number(document.getElementById('ValorAposta').value)
+    TotalArecadado += ValorAposta 
+DinoEscolhido = document.getElementById("DinoUSER").innerHTML="T-REX"
+    console.log(TotalArecadado + DinoEscolhido)
+}
+
 let valorDADO=0, totalDADO=0,D4=0, D6=0,D10=0,D12=0
 function resetar(){
     valorDADO= valorDADO*0
@@ -16,7 +28,7 @@ function rolagemD12(){
 
     valorDADO =Math.floor(Math.random() * (12 - 1 + 1)) + 1;
     totalDADO = totalDADO + valorDADO 
-    D12= D12+1
+    D12 += 1
 document.getElementById('TotalDADO').innerHTML='Total valor dos Dados :'+totalDADO
 document.getElementById('valorDado').innerHTML='Ultimo Dado :'+valorDADO
 document.getElementById('D12').innerHTML='DADO 12('+D12 +")"
@@ -26,7 +38,7 @@ document.getElementById('listaDADOS').innerHTML += + valorDADO + ', '
 function rolagemD10(){
     valorDADO =Math.floor(Math.random() * (10 - 1 + 1)) + 1;
     totalDADO = totalDADO + valorDADO 
-    D10= D10+1
+    D10 += 1
 document.getElementById('TotalDADO').innerHTML='Total valor dos Dados :'+totalDADO
 document.getElementById('valorDado').innerHTML='Ultimo Dado :'+valorDADO
 document.getElementById('D10').innerHTML='DADO 10('+D10 +")"
@@ -36,7 +48,7 @@ function rolagemD6(){
 
     valorDADO =Math.floor(Math.random() * (6 - 1 + 1)) + 1;
     totalDADO = totalDADO + valorDADO 
-    D6= D6+1
+    D6 += 1
 document.getElementById('TotalDADO').innerHTML='Total valor dos Dados :'+totalDADO
 document.getElementById('valorDado').innerHTML='Ultimo Dado :'+valorDADO
 document.getElementById('D6').innerHTML='DADO 6('+D6 +")"
@@ -46,7 +58,7 @@ document.getElementById('listaDADOS').innerHTML += + valorDADO + ', '
 function rolagemD4(){
 valorDADO =Math.floor(Math.random() * (4 - 1 + 1)) + 1;
 totalDADO = totalDADO + valorDADO
-D4= D4+1
+D4 += 1
 
 document.getElementById('TotalDADO').innerHTML='Total valor dos Dados :'+totalDADO
 document.getElementById('valorDado').innerHTML='Ultimo Dado :'+valorDADO
@@ -56,18 +68,16 @@ document.getElementById('listaDADOS').innerHTML += + valorDADO + ', '
 
 
 
-
-
 let total = 0
 function registrarVenda(){
     let valor = Number(document.getElementById('inputVenda').value)
-    // registrar venda no total
+        // registrar venda no total
     total = total + valor
-    // atualizar total na página
+        // atualizar total na página
     document.getElementById('totalVendido').innerHTML =  
     'Total de vendas: R$' + total.toFixed(2)
 
-    // lista de vendas
+        // lista de vendas
     document.getElementById('listaVendas').innerHTML += 'R$' + valor.toFixed(2) + '<br>'
     
     document.getElementById('inputVenda').value = ''
@@ -80,8 +90,6 @@ function registrarVenda(){
 
 let cont = 0
 function incrementarContagem(){
-    // cont = cont + 1
-    // cont += 1
     cont++
     document.getElementById('p-contagem').innerHTML = cont
 }
