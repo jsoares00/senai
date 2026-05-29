@@ -6,5 +6,5 @@ button{
 body{
     background-color: rgb(79, 193, 221);
     position: fixed;
-    position: relative;
+    margin: 0;
 }

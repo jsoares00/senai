@@ -1,13 +1,15 @@
 let TotalArecadado=0
 let ValorAposta=0
+let DinoEscolhido
+let tRex
 
 
-function Sortear(tRex){
-    let grenn
+function Sortear(){
     ValorAposta = Number(document.getElementById('ValorAposta').value)
     TotalArecadado += ValorAposta 
-DinoEscolhido = document.getElementById("DinoUSER").innerHTML="T-REX"
-    console.log(TotalArecadado + DinoEscolhido)
+DinoEscolhido=document.getElementById("1").innerHTML='t-rex'
+    console.log(TotalArecadado + DinoEscolhido )
+
 }
 
 let valorDADO=0, totalDADO=0,D4=0, D6=0,D10=0,D12=0
