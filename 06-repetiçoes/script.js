@@ -8,9 +8,9 @@
 // console.log(contador)
 
 
-let numero=11
+let numero=10
 function questao2(){
-if(numero <= 11 || numero > -1){
+if(numero <= 10){
 
     numero-=1
 
@@ -79,8 +79,27 @@ document.getElementById('resultado4').innerHTML=tabuada
 }
 function calcular(){
     var tabuada=5,
-    multiplicdor=document.getElementById('multiplicar').value
-tabuada*=multiplicdor
+    multiplicador=document.getElementById('multiplicar').value
+tabuada*=multiplicador
 document.getElementById('resultado4').innerHTML=tabuada
 console.log(tabuada)
+}
+function tabuada(){
+   var multiplicar=Number(prompt("digite um valor para ver a tabela"))
+var multiplicador=Number(prompt("digite um valor para multiplicar"))
+var resultado=0
+resultado=(multiplicar*multiplicador)
+
+console.log(resultado)
+document.getElementById('resultadoq5').innerHTML="  "+resultado
+}
+var num=1
+function impar(){
+num+=2
+if(num > 0 & num < 20){
+    document.getElementById('resultadoq6').innerHTML=num
+}
+}
+function crescentar(){
+    
 }
