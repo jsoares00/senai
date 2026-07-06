@@ -103,3 +103,20 @@ if(num > 0 & num < 20){
 function crescentar(){
     
 }
+function calcularF(){
+    var fatorial=document.getElementById('numero').value
+    if (fatorial < 0){
+     document.getElementById('resultadoq8').innerHTML="Não existe fatorial de número negativo";
+console.log(fatorial)   
+    }if (fatorial == 0 || fatorial == 1){
+    document.getElementById('resultadoq8').innerHTML='  '+fator
+    }
+
+    let resultado = 1;
+    let i = 2; 
+    for (i <= fatorial ) {
+        resultado = resultado * i; 
+        document.getElementById('resultadoq8').innerHTML=' '+resultado
+    }
+
+}
