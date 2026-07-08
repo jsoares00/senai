@@ -1,7 +1,7 @@
 const personagens = [
   "Neymara",
   "Rivaldo junior",
-  "Mônica",
+  "Ney Mato Grosso",
   "Capitão Ganso",
   "Peba",
   "Gill Bates",
@@ -21,14 +21,12 @@ const seletor = document.getElementById('seletor');
 const selectPersonagens = document.getElementById('select-personagens');
 
 personagens.forEach((nome, index) => {
-    // Cria a célula de texto para mostrar todos os nomes na tela
     const celula = document.createElement('div');
     celula.className = 'celula';
     celula.id = `item-${index + 1}`;
     celula.innerHTML = `<span class='valor'>${nome}</span>`;
     lista.appendChild(celula);
 
-    // Cria uma opção (<option>) para o menu de seleção
     const opcao = document.createElement('option');
     opcao.value = index; // Guardamos o índice do array como valor da opção
     opcao.textContent = nome; // Nome visível no menu
@@ -47,5 +45,18 @@ selectPersonagens.addEventListener('change', (evento) => {
     const nomeSelecionado = personagens[indice];
 
     // ${indice +1}(começar a contar do 1 )
-    seletor.innerHTML = `O personagem <strong>${nomeSelecionado}</strong> está na posição <strong>${indice}</strong> da lista.`;
+    seletor.innerHTML = `O jogador <strong>${nomeSelecionado}</strong>,seu numero da camisa é <strong>${indice +1}</strong> .`;
 });
+// Seleciona a imagem pelo ID
+const trofeuImg = document.getElementById('trofeu');
+
+// Adiciona um efeito visual quando o mouse passa por cima
+trofeuImg.addEventListener('mouseenter', () => {
+    trofeuImg.style.transform = 'scale(1.05)'; // Aumenta levemente de tamanho
+});
+
+// Volta ao normal quando o mouse sai
+trofeuImg.addEventListener('mouseleave', () => {
+    trofeuImg.style.transform = 'scale(1)';
+});
+
