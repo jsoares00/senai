@@ -1,8 +1,3 @@
-#cocadomundo{
-    max-width: 400px;     /* Define a largura máxima da imagem */
-    width: 100%;          /* Torna a imagem responsiva para celulares */
-    height: auto;         /* Mantém a proporção sem distorcer */
-    border-radius: 15px;  /* Deixa as bordas arredondadas (opcional) */
-    box-shadow: 0 8px 24px rgba(0, 255, 0, 0.2); /* Brilho verde de fundo */
-    transition: transform 0.3s ease; /* Suaviza a animação do JS */
+#q1{
+
 }

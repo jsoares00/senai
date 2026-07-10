@@ -1,3 +1,21 @@
+const nome =[
+    "Chico Moedas",
+    "Gk bruno",
+    "Trevor",
+    "Mc Katrina",
+    "Bob 🐶",
+    "Maiconjackeson",
+    "Oruam",
+    "Osama",
+    "Mohamed"
+]
+const listNome=document.getElementById('lista2')
+
+nome.forEach(nome) =>{
+    
+
+}
+
 const personagens = [
   "Neymara",
   "Rivaldo junior",
@@ -28,8 +46,8 @@ personagens.forEach((nome, index) => {
     lista.appendChild(celula);
 
     const opcao = document.createElement('option');
-    opcao.value = index; // Guardamos o índice do array como valor da opção
-    opcao.textContent = nome; // Nome visível no menu
+    opcao.value = index;
+    opcao.textContent = nome; 
     selectPersonagens.appendChild(opcao);
 });
 
@@ -47,16 +65,3 @@ selectPersonagens.addEventListener('change', (evento) => {
     // ${indice +1}(começar a contar do 1 )
     seletor.innerHTML = `O jogador <strong>${nomeSelecionado}</strong>,seu numero da camisa é <strong>${indice +1}</strong> .`;
 });
-// Seleciona a imagem pelo ID
-const trofeuImg = document.getElementById('trofeu');
-
-// Adiciona um efeito visual quando o mouse passa por cima
-trofeuImg.addEventListener('mouseenter', () => {
-    trofeuImg.style.transform = 'scale(1.05)'; // Aumenta levemente de tamanho
-});
-
-// Volta ao normal quando o mouse sai
-trofeuImg.addEventListener('mouseleave', () => {
-    trofeuImg.style.transform = 'scale(1)';
-});
-
