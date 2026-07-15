@@ -1,0 +1,94 @@
+/* Reset básico e centralização na tela */
+body {
+  background-color: #f9f9f9; /* Fundo ligeiramente cinza para destacar o formulário branco */
+  color: #111111;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Card do Formulário */
+#form {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 32px;
+  width: 100%;
+  max-width: 340px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Sombra bem suave */
+}
+
+/* Blocos de Input */
+.cont_imput {
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Labels discretas e elegantes */
+label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #666666;
+  margin-bottom: 6px;
+}
+
+/* Inputs Modernos */
+input {
+  padding: 10px 12px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  background-color: #ffffff;
+  color: #111111;
+  font-size: 14px;
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+/* Efeito de foco no Input */
+input:focus {
+  border-color: #000000;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1); /* Bordinha de foco sutil */
+}
+
+/* Botão Principal (Cadastrar) */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #000000;
+  color: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-top: 8px;
+}
+
+button:hover {
+  background-color: #222222;
+}
+
+/* Linha divisória sutil */
+hr {
+  border: 0;
+  border-top: 1px solid #eeeeee;
+  margin: 24px 0;
+}
+
+/* Botão Secundário (Teste) - Estilo invertido para diferenciar */
+button[onclick="testar()"] {
+  background-color: #ffffff;
+  color: #111111;
+  border: 1px solid #cccccc;
+  margin-top: 0;
+}
+
+button[onclick="testar()"]:hover {
+  background-color: #f5f5f5;
+  border-color: #000000;
+}

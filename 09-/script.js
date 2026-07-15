@@ -12,8 +12,8 @@ const nome =[
 const listNome=document.getElementById('lista2')
 
 nome.forEach(nome) =>{
-    
 
+    
 }
 
 const personagens = [

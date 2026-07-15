@@ -57,7 +57,7 @@ document.getElementById('D6').innerHTML='DADO 6('+D6 +")"
 document.getElementById('listaDADOS').innerHTML += + valorDADO + ', '
 }
 
-function rolagemD4(){
+function rolagemD4(){ //La ele
 valorDADO =Math.floor(Math.random() * (4 - 1 + 1)) + 1;
 totalDADO = totalDADO + valorDADO
 D4 += 1
