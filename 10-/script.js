@@ -75,6 +75,3 @@ function listaDino(){
     // Mostra a lista completa com os 6 dinossauros no console
     console.log(listaDinos);
 }
-
-
-}
