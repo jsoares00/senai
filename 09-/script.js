@@ -1,20 +1,35 @@
-const nome =[
-    "Chico Moedas",
-    "Gk bruno",
-    "Trevor",
-    "Mc Katrina",
-    "Bob 🐶",
-    "Maiconjackeson",
-    "Oruam",
-    "Osama",
-    "Mohamed"
-]
-const listNome=document.getElementById('lista2')
+function desinverter() {
+document.getElementById("arraysDias").innerHTML = diaSemana.join("<br>");
 
-nome.forEach(nome) =>{
-
-    
 }
+
+function inverterDias() {
+const invertido = [...diaSemana].reverse();
+
+document.getElementById("arraysDias").innerHTML=invertido.join("<br>");
+
+}
+const diaSemana =[
+]
+
+function sextou() {
+    const inputElement = document.getElementById("semana");
+    const valor = inputElement.value;
+
+
+if (valor.trim() === "") {
+    return;
+ }
+
+ diaSemana.push(valor);
+
+document.getElementById("arraysDias").innerHTML = diaSemana.join("<br>");
+console.log(diaSemana);
+inputElement.value = "";    // Limpa o input
+
+document.getElementById("semana").focus
+}
+
 
 const personagens = [
   "Neymara",
