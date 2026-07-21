@@ -1,14 +1,14 @@
 
-// function testar() {
-//     const dino ={
-//         nome: "rex",
-//         altura: 2,
-//         cor: "azul",
-//         custo: 7
-//     }
-//     console.log(dino)
+function testar() {
+    const dino ={
+        nome: "rex",
+        altura: 2,
+        cor: "azul",
+        custo: 7
+    }
+    console.log(dino)
     
-// }
+}
 
 function cadastrar(){
 const dino = {
